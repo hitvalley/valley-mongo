@@ -1,0 +1,30 @@
+{
+  "name": "valley-mongo",
+  "version": "1.0.0",
+  "description": "mongo driver with valley-module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hitvalley/valley-mongo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hitvalley/valley-mongo/issues"
+  },
+  "homepage": "https://github.com/hitvalley/valley-mongo#readme",
+  "dependencies": {
+    "mongodb": "^3.0.1",
+    "valley-module": "^1.0.11"
+  },
+  "devDependencies": {
+    "jest": "^22.1.4"
+  }
+}
