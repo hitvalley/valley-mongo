@@ -7,7 +7,16 @@
     "test": "jest"
   },
   "jest": {
-    "collectCoverage": true
+    "transform": {
+      ".jsx?$": "babel-jest"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/index.js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*test.js?(x)"
+    ]
   },
   "repository": {
     "type": "git",
