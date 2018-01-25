@@ -5,7 +5,11 @@ const MongoClient = mongodb.MongoClient;
 function connectMDB(url) {
   return new Promise((resolve, reject) => {
     MongoClient.connect(url, (err, client) => {
-      err ? reject(err) : resolve(client);
+      if (err) {
+        reject(err);
+      } else {
+        resolve(client);
+      }
     })
   });
 }
@@ -37,7 +41,7 @@ class ValleyMongo extends ValleyModule {
     });
   }
   close() {
-    this.context.db.close();
+   this.context.db && this.context.db.close();
   }
 }
 
