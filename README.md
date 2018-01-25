@@ -30,8 +30,8 @@ server.listen(3000);
 
 ### 链接
 
-* [!valley-server](https://github.com/hitvalley/valley-server)
-* [!valley-mongo](https://github.com/hitvalley/valley-module)
+* [valley-server](https://github.com/hitvalley/valley-server)
+* [valley-mongo](https://github.com/hitvalley/valley-module)
 
 ## run test
 
